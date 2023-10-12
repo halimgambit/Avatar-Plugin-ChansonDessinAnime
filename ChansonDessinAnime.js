@@ -1,55 +1,55 @@
 exports.action = function(data, callback){
 
 	var tblCommand = {
-	
-		dragonball : function() {dessinAnnime ("dragonball_z", data, client);},					
-		goldorak : function() {dessinAnnime ("goldorak", data, client);},
-		spiderman : function() {dessinAnnime ("spiderman", data, client);},					
-		chevalierZodiaque : function() {dessinAnnime ("chevalier_zodiaque", data, client);},
-		albator : function() {dessinAnnime ("albator", data, client);},					
-		aladdin : function() {dessinAnnime ("aladdin", data, client);},
-		Astro : function() {dessinAnnime ("Astro", data, client);},					
-		batman : function() {dessinAnnime ("batman", data, client);},
-		belleSebastien : function() {dessinAnnime ("belle_sebastien", data, client);},					
-		capitaineFlam : function() {dessinAnnime ("capitaine_flam", data, client);},
-		arretAnnime : function() {dessinAnnime ("stopAnnime", data, client);}
+		
+	        dragonball : function() {dessinAnime ("dragonball_z", data, client);},					
+		goldorak : function() {dessinAnime ("goldorak", data, client);},
+		spiderman : function() {dessinAnime ("spiderman", data, client);},					
+		chevalierZodiaque : function() {dessinAnime ("chevalier_zodiaque", data, client);},
+		albator : function() {dessinAnime ("albator", data, client);},					
+		aladdin : function() {dessinAnime ("aladdin", data, client);},
+		Astro : function() {dessinAnime ("Astro", data, client);},					
+		batman : function() {dessinAnime ("batman", data, client);},
+		belleSebastien : function() {dessinAnime ("belle_sebastien", data, client);},					
+		capitaineFlam : function() {dessinAnime ("capitaine_flam", data, client);},
+		arretanime : function() {dessinAnime ("stopanime", data, client);}
 	};
 	
-	function dessinAnnime (annime, data, client) {
+	function dessinAnime (anime, data, client) {
 
-		if(annime === "dragonball_z") {
+		if(anime === "dragonball_z") {
 			Avatar.play('%URL%https://www.dinosoria.com/generiques/dessins_anime/dragonballz_debut.mp3', data.client);
 		}
-		if(annime === "goldorak") {
+		if(anime === "goldorak") {
 			Avatar.play('%URL%https://www.dinosoria.com/generiques/dessins_anime/goldorak_ennemi.mp3', data.client);
 		}
-		if(annime === "spiderman") {
+		if(anime === "spiderman") {
 			Avatar.play('%URL%https://www.dinosoria.com/generiques/dessins_anime/spiderman.mp3', data.client);	
 		}
-		if(annime === "chevalier_zodiaque") {
+		if(anime === "chevalier_zodiaque") {
 			Avatar.play('%URL%https://www.dinosoria.com/generiques/dessins_anime/chevalier_zodiaque.mp3', data.client);
 		}
-		if(annime === "albator") {
+		if(anime === "albator") {
 			Avatar.play('%URL%https://www.dinosoria.com/generiques/dessins_anime/albator_84.mp3', data.client);
 		}
-		if(annime === "aladdin") {
+		if(anime === "aladdin") {
 			Avatar.play('%URL%https://www.dinosoria.com/generiques/dessins_anime/aladdin.mp3', data.client);
 		}
-		if(annime === "Astro") {
+		if(anime === "Astro") {
 			Avatar.play('%URL%https://www.dinosoria.com/generiques/dessins_anime/Astro%20le%20petit%20robot.mp3', data.client);
 		}
-		if(annime === "batman") {
+		if(anime === "batman") {
 			Avatar.play('%URL%https://www.dinosoria.com/generiques/dessins_anime/batman.mp3', data.client);
 		}
-		if(annime === "belle_sebastien") {
+		if(anime === "belle_sebastien") {
 			Avatar.play('%URL%https://www.dinosoria.com/generiques/dessins_anime/belle_sebastien.mp3', data.client);
 		}
-		if(annime === "capitaine_flam") {
+		if(anime === "capitaine_flam") {
 			Avatar.play('%URL%https://www.dinosoria.com/generiques/dessins_anime/capitaine_flam.mp3', data.client);
 		}
 
-		if(annime === "stopAnnime") {
-			Avatar.speak("J'arète les chansons dessin annimé", data.client, () => {
+		if(anime === "stopanime") {
+			Avatar.speak("J'arète les chansons dessin animé", data.client, () => {
 				Avatar.Speech.end(data.client, true, () => {
 				Avatar.stop(null, client, () => {
 				});
