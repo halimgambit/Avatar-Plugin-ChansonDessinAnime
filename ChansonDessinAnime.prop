@@ -1,0 +1,21 @@
+{
+	"modules": { 
+		"ChansonDessinAnime": {
+			"version": "1.0",
+			"rules": {
+				"dragonball": ["dragon ball z"],
+				"goldorak": ["goldorak"],
+				"spiderman": ["spiderman"],
+				"chevalierZodiaque": ["the knight oh the zodiac","zodiac knight"],
+				"albator": ["albator"],
+				"aladdin": ["aladdin"],
+				"Astro": ["Astro"],
+				"batman": ["batman"],
+				"belleSebastien": ["beautiful and sebastien"],
+				"capitaineFlam": ["captain flam"],
+				"arretAnnime": ["stop * cartoon","stop the cartoon"]
+			}
+		}
+	}
+}
+			
